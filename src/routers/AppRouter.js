@@ -12,19 +12,16 @@ import { AuthRouter } from './AuthRouter';
 export const AppRouter = () => {
    
     return (
-        <div className='auth__main'>
-
-            <div className='auth__box-container'>
                 <Router>
+                    <div>
                         <Switch>
                             <Route path="/auth" component={ AuthRouter } />
                             <Route exact path="/" component={ JournalScreen } />
 
                             <Redirect to="/auth/login" />
                         </Switch>
+                    </div>
                 </Router>
-            </div>
-        </div>
     
     )
 }
