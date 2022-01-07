@@ -7,24 +7,24 @@ export const JournalEntry = () => {
             <div 
                 className='journal__entry-picture'
                 style={{
-                    background:'cover',
+                    backgroundSize:'cover',
                     backgroundImage: 'url(https://www.akamai.com/content/dam/site/im-demo/perceptual-standard.jpg?imbypass=true)'
                 }}
             ></div>
 
-        <div className='journal__entry-body'>
+            <div className='journal__entry-body'>
                 <p className='journal__entry-title'>
                     Un nuevo dia
                 </p>
                 <p className='journal__entry-content'>
-                   Pariatur culpa dolore laborum amet tempor aliqua ullamco.
+                Pariatur culpa dolore laborum amet tempor aliqua ullamco.
                 </p>
-        </div>
+            </div>
 
-        <div className='journal__entry-date-box'>
+            <div className='journal__entry-date-box'>
                 <span>Monday</span>
                 <h4>22</h4>
-        </div>
+            </div>
 
         </div>
     )

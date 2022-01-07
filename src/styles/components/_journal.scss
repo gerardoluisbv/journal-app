@@ -1,4 +1,5 @@
 
+
 .journal__main-content {
     display: flex;
 }
@@ -43,7 +44,7 @@
 .journal__entries {
     flex: 1 1 auto;
     margin-top: 30px;
-    overflow-y: scroll;
+    overflow-x: hidden;
 
 }
 
