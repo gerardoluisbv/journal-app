@@ -7,7 +7,7 @@ export const Sidebar = () => {
 
             <div className='journal__sidebar-navbar'>
                 <h3 className='mt-5'>
-                    <i className='far fa-moon'></i>
+                    <i className='far fa-moon'></i> 
                     <span> Gerardo</span>
                 </h3>
 
