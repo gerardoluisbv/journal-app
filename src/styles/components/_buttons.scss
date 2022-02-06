@@ -78,3 +78,9 @@
         background: $button-active-blue;
     }
 }
+
+    button[type=submit]:disabled {
+
+        cursor: not-allowed;
+    
+    }
