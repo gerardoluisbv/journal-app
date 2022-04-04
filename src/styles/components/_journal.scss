@@ -53,6 +53,7 @@
     border-radius: 4px;
     color: $dark-grey;
     display:flex;
+    justify-content: space-between;
     margin-bottom: 10px;
     overflow: hidden;
 }
@@ -69,10 +70,18 @@
 .journal__entry-title {
     font-size: 12px;
     font-weight: bold;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .journal__entry-content {
+    width: 180px;
     font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .journal__entry-date-box {
