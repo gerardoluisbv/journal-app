@@ -3,8 +3,20 @@
 .journal__main-content {
     display: flex;
     height: 100vh;
-}
+    
 
+    @include media-up(xs) {
+        flex-direction: column;
+        height: 50vh;
+       
+     }
+
+     @include media-up(lg) {
+        flex-direction: row;
+        height: 100%;
+       
+     }
+}
 
 .journal__sidebar {
     background-color: $dark-grey;
@@ -14,6 +26,17 @@
     height: 100vh;
    
     width: 450px;
+
+    @include media-up(xs) {
+    
+        width: 100%;
+      
+     }
+
+
+     @include media-up(lg) {
+        width: 400px;
+     }
 }
 
 .journal__sidebar-navbar {
