@@ -18,6 +18,8 @@ import { PrivateRoute } from './PrivateRoute';
 import { PublicRoute } from './PublicRoute';
 import { startLoadingNotes } from '../actions/notes';
 
+import Spinner from '../components/ui/Spinner'
+
 
 export const AppRouter = () => {
 
@@ -48,7 +50,7 @@ export const AppRouter = () => {
     
     if ( checking ) {
         return (
-            <h1> Wait... </h1>
+            <Spinner />
         )
     }
    

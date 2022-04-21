@@ -2,7 +2,9 @@
 
 .journal__main-content {
     display: flex;
+    height: 100vh;
 }
+
 
 .journal__sidebar {
     background-color: $dark-grey;
@@ -10,14 +12,15 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding-left: 10px;
-    padding-right: 10px;
+   
     width: 450px;
 }
 
 .journal__sidebar-navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    justify-items: center;
 }
 
 .journal__sidebar-navbar h3{
@@ -45,6 +48,9 @@
     flex: 1 1 auto;
     margin-top: 30px;
     overflow-x: hidden;
+    align-self: center;
+    width: 96%;
+    
 
 }
 

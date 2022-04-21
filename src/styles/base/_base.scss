@@ -5,13 +5,28 @@
 
 }
 
+
+
 html, body {
     height: 100vh;
     width: 100vw;
+   
 }
 
 main {
     width: 100%;
+}
+
+::-webkit-scrollbar {
+    width:  0.6em;
+ }
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(231, 231, 231);
 }
 
 .mt-1 {
@@ -23,7 +38,7 @@ main {
 }
 
 .mb-1 {
-    margin-bottom: px;
+    margin-bottom: 5px;
 }
 
 .mb-5 {
@@ -33,3 +48,4 @@ main {
 .pointer {
     cursor: pointer;
 }
+

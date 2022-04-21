@@ -23,7 +23,7 @@ export const RegisterScreen = () => {
         name: 'Gerardo',
         email: 'gerardoluis812@gmail.com',
         password: '123456',
-        password2: '123455'
+        password2: '123456'
     };
     
     const [ formValues, handleInputChange ] = useForm( initialForm );

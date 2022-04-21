@@ -35,7 +35,8 @@ export const JournalEntry = ({ id, date, title, body, url }) => {
                 className='journal__entry-picture'
                 style={{
                     backgroundSize:'cover',
-                    backgroundImage: `url(${ url })`
+                    backgroundImage: `url(${ url })`,
+                    backgroundPosition: 'center center'
                 }}
             ></div>
             }
