@@ -3,18 +3,42 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-const firebaseConfig = {
-    apiKey: "AIzaSyDM5Kp2Rg8-ZjmLY-vYbwvd997DS1BV0-E",
-    authDomain: "react-journal-app-a20bb.firebaseapp.com",
-    projectId: "react-journal-app-a20bb",
-    storageBucket: "react-journal-app-a20bb.appspot.com",
-    messagingSenderId: "268144647074",
-    appId: "1:268144647074:web:467b83a36242fcf0e070fb"
-  };
-  
-  // Initialize Firebase
- firebase.default.initializeApp(firebaseConfig); 
 
+//console.log(process.env);
+
+const firebaseConfig = {
+    apiKey: process.env.REACT_APP_APIKEY,
+    authDomain: process.env.REACT_APP_AUTHDOMAIN,
+    projectId: process.env.REACT_APP_PROJECTID,
+    storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+    appId: process.env.REACT_APP_APPID
+  };
+
+
+  // CONFIG VIEJA YA SE LLEVO A VARIABLES DE ENTORNO
+  
+
+//   const firebaseConfigTesting = {
+//     apiKey: "AIzaSyCjxapfndLD-HefelgoAMZY-ZDGqNYxJF0",
+//     authDomain: "testing-journal-app-1c0aa.firebaseapp.com",
+//     projectId: "testing-journal-app-1c0aa",
+//     storageBucket: "testing-journal-app-1c0aa.appspot.com",
+//     messagingSenderId: "962013647532",
+//     appId: "1:962013647532:web:a11a675a89c3c6fc634509"
+//   };
+  
+//   // Initialize Firebase
+
+//   if( process.env.NODE_ENV === 'test' ){
+    //       firebase.default.initializeApp(firebaseConfigTesting); 
+    //   } else {
+        //       firebase.default.initializeApp(firebaseConfig);
+        //   }
+ 
+  // Initialize Firebase
+
+  firebase.default.initializeApp(firebaseConfig);
   const db = firebase.firestore();
   const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
@@ -23,6 +47,8 @@ const firebaseConfig = {
       googleAuthProvider,
       firebase
   }
+
+
 
 
 

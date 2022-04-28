@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el <JournalEntry /> debe de mostrarse corretamente 1`] = `
+<div
+  className="journal__entry pointer animate__animated animate__fadeIn"
+  onClick={[Function]}
+>
+  <div
+    className="journal__entry-picture"
+    style={
+      Object {
+        "backgroundImage": "url(https://somewhere/foto.jpg)",
+        "backgroundPosition": "center center",
+        "backgroundSize": "cover",
+      }
+    }
+  />
+  <div
+    className="journal__entry-body"
+  >
+    <p
+      className="journal__entry-title"
+    >
+      Hola
+    </p>
+    <p
+      className="journal__entry-content"
+    >
+      Mundo
+    </p>
+  </div>
+  <div
+    className="journal__entry-date-box"
+  >
+    <span>
+       
+      Wednesday
+       
+    </span>
+    <h4>
+       
+      31st
+       
+    </h4>
+  </div>
+</div>
+`;

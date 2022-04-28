@@ -28,7 +28,7 @@ import { fileUpload } from "../../helpers/fileUpload";
 
 
             await cloudinary.v2.api.delete_resources(imageId, {}, () => {
-                console.log("Se elimino la imagen");
+               // console.log("Se elimino la imagen");
             });
         
         })

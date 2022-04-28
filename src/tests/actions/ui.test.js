@@ -1,3 +1,6 @@
+/**
+ * @jest-environment node
+*/
 import { setError, removeError, startLoading, finishLoading } from '../../../src/actions/ui';
 import { types } from '../../types/types';
 
