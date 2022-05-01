@@ -18,6 +18,15 @@ const firebaseConfig = {
 
   // CONFIG VIEJA YA SE LLEVO A VARIABLES DE ENTORNO
   
+// ``
+//   REACT_APP_APIKEY = AIzaSyDM5Kp2Rg8-ZjmLY-vYbwvd997DS1BV0-E
+//   REACT_APP_AUTHDOMAIN = react-journal-app-a20bb.firebaseapp.com
+//   REACT_APP_PROJECTID = react-journal-app-a20bb
+//   REACT_APP_STORAGEBUCKET = react-journal-app-a20bb.appspot.com
+//   REACT_APP_MESSAGINGSENDERID = 268144647074
+//   REACT_APP_APPID = 1:268144647074:web:467b83a36242fcf0e070fb
+
+
 
 //   const firebaseConfigTesting = {
 //     apiKey: "AIzaSyCjxapfndLD-HefelgoAMZY-ZDGqNYxJF0",
@@ -46,6 +55,17 @@ const firebaseConfig = {
       db,
       googleAuthProvider,
       firebase
+  }
+
+  module.exports = {
+    env : {
+      FIREBASE_API_KEY: process.env.apiKey,
+      AUTH_DOMAIN: process.env.authDomain,
+      PROJECT_ID: process.env.projectId,
+      STORAGE_BUCKET: process.env.storageBucket,
+      MESSAGING_SENDER_ID: process.env.messagingSenderId,
+      APP_ID: process.env.appId,
+    }
   }
 
 
