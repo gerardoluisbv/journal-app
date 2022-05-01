@@ -50,14 +50,8 @@ const firebaseConfig = {
   firebase.default.initializeApp(firebaseConfig);
   const db = firebase.firestore();
   const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
-
-  export {
-      db,
-      googleAuthProvider,
-      firebase
-  }
-
-  module.exports = {
+ 
+  const config = {
     env : {
       FIREBASE_API_KEY: process.env.apiKey,
       AUTH_DOMAIN: process.env.authDomain,
@@ -68,6 +62,15 @@ const firebaseConfig = {
     }
   }
 
+
+  export {
+      db,
+      googleAuthProvider,
+      firebase,
+      config
+  }
+
+  
 
 
 
